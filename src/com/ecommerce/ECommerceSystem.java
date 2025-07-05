@@ -17,7 +17,6 @@ public class ECommerceSystem {
         ShippingService shippingService = new ShippingServiceImpl();
         CheckoutService checkoutService = new CheckoutServiceImpl(shippingService);
 
-        // Create products
         PerishableProduct cheese = new PerishableProduct("Cheese", 100, 10,
                 LocalDate.now().plusDays(7), 0.2);
         PerishableProduct biscuits = new PerishableProduct("Biscuits", 150, 5,
